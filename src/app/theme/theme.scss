@@ -1,0 +1,212 @@
+
+//Theme menu
+
+$randstad:0; //Randstad Original
+$subtle:1; //Subtle Blue
+$blush:2;   //Blushing Pink
+$tealed:3; //Whatsapp Green
+
+//Randstad Colors
+$randstad-dark: #0f1941;
+$randstad-blue:#1178c3;
+$randstad-red: #e74536;
+$randstad-yellow: #ffb510;
+$randstad-green: #3d6c77;
+// $randstad-green: #6ba5b4;
+$randstad-white: #ffffff;
+$randstad-containerbg:#FAFAFB;
+$randstad-status-pending-color:#ff0000;
+$randstad-status-pending-bgcolor:#FFE8E8;
+$randstad-status-approved-color:#0076FF;
+$randstad-status-approved-bgcolor:#E8F3FF;
+$randstad-status-completed-color:#29AC02;
+$randstad-status-completed-bgcolor:#EBF9E8;
+
+
+//BaseColors
+$theme1--base-color:$randstad-dark;
+$theme2--base-color:#3c5a90;
+$theme3--base-color:#903c5c;
+$theme4--base-color:#13312b;
+
+//Active Theme
+$theme:0;
+
+//Default Variables Init
+$theme--base-color:#fff;
+$theme--inactive-color:#fff;
+$theme--hover-color:#fff;
+$theme--active-color:#fff;
+$theme--breadcrumb-color:#fff;
+$theme--highlighted:#fff;
+$theme--highlighted-text:#fff;
+$theme--header-text-color:#fff;
+$theme--modal-btn-positive:#fff;
+$theme--modal-btn-negative:#fff;
+$theme--base-color2:#FFF;
+$theme--active-bgcolor:#FFF;
+$theme--btn-primary-color:#FFF;
+$theme--table-input-color:#FFF;
+$theme--btn-attach:#FFF;
+$theme--sender-bubble-color:#FFF;
+$theme--receiver-bubble-color:#FFF;
+$theme--comments-container:#FFF;
+$theme--container-border: #FFF;
+$theme--container-bg:#FFF;
+$theme--btn-submit-text:#FFF;
+$theme--kpi-list-header-color: #FFF;
+$theme--chart-stroke-color: #FFF;
+$theme--modal-btn-positive-text: #FFF;
+$theme--modal-btn-ok: #FFF;
+$theme--modal-btn-ok-text: #FFF;
+$theme--btn-reopen: #FFF;
+$theme--btn-reopen-text: #FFF;
+$theme--toggle-enabled-color:#FFF;
+$theme--designation-color: #FFF;
+$theme--kpimangerlistview-color: #FFF;
+$theme--status-pending-color: #FFF;
+$theme--status-completed-color: #FFF;
+$theme--status-approved-color: #FFF;
+$theme--status-rejected-color: #FFF;
+$theme--status-pending-bgcolor: #FFF;
+$theme--status-completed-bgcolor: #FFF;
+$theme--status-approved-bgcolor: #FFF;
+$theme--status-rejected-bgcolor: #FFF;
+
+
+//Condition
+
+@if $theme == $randstad{
+$theme--base-color:$randstad-dark;
+$theme--base-color2:$randstad-dark;
+$theme--inactive-color:#888FB1;
+$theme--hover-color:$randstad-yellow;
+$theme--active-color:$randstad-white;
+$theme--breadcrumb-color:#FCF3DC;
+$theme--highlighted:$randstad-dark;
+$theme--highlighted-text:$randstad-yellow;
+$theme--header-text-color:$randstad-dark;
+$theme--modal-btn-positive:$randstad-yellow;
+$theme--modal-btn-negative:$randstad-red;
+$theme--table-input-color:#252c52;
+$theme--btn-primary-color:$randstad-blue;
+$theme--btn-attach:$randstad-green;
+$theme--sender-bubble-color:#fff4ce;
+$theme--receiver-bubble-color:#fff;
+$theme--comments-container:transparent;
+$theme--container-border: #1d223a12;
+$theme--container-bg:#fbfbff;
+$theme--chart-stroke-color: $randstad-blue;
+$theme--btn-submit-text: $randstad-dark;
+$theme--kpi-list-header-color: $randstad-yellow;
+$theme--modal-btn-positive-text: $randstad-dark;
+$theme--modal-btn-ok: $randstad-yellow;
+$theme--modal-btn-ok-text: $randstad-dark;
+$theme--btn-reopen: $randstad-dark;
+$theme--btn-reopen-text: $randstad-yellow;
+$theme--toggle-enabled-color: $randstad-blue;
+$theme--designation-color: $randstad-yellow;
+$theme--kpimangerlistview-color: $randstad-containerbg;
+$theme--status-pending-color:$randstad-status-pending-color;
+$theme--status-completed-color: $randstad-status-completed-color;
+$theme--status-approved-color: $randstad-status-approved-color;
+$theme--status-rejected-color: $randstad-status-pending-color;
+$theme--status-pending-bgcolor: $randstad-status-pending-bgcolor;
+$theme--status-completed-bgcolor: $randstad-status-completed-bgcolor;
+$theme--status-approved-bgcolor: $randstad-status-approved-bgcolor;
+$theme--status-rejected-bgcolor: $randstad-status-pending-bgcolor;
+}
+
+@else if $theme == $subtle{
+    $theme--base-color:#1e223b;
+    $theme--base-color2:#1e223b;
+    $theme--inactive-color:#fdfeff5c;
+    $theme--hover-color:#FFF;
+    $theme--active-color:#FFF;
+    $theme--breadcrumb-color:#F8F8F8;
+    $theme--highlighted:$theme--base-color;
+    $theme--highlighted-text:#FFF;
+    $theme--header-text-color:#4a4a4a;
+    $theme--modal-btn-positive:#00A200;
+    $theme--modal-btn-negative:$randstad-red;
+    $theme--table-input-color:#272d48;
+    $theme--btn-primary-color:#3c5a90;
+    $theme--btn-attach:#0d505f;
+    $theme--sender-bubble-color:#c6daff;
+    $theme--receiver-bubble-color:#fff4ce;
+    $theme--comments-container:transparent;
+    $theme--container-border: #1d223a12;
+    $theme--container-bg:#fbfbff;
+    $theme--chart-stroke-color: $theme--base-color;
+    $theme--btn-submit-text: #FFF;
+    $theme--kpi-list-header-color: #FFF;
+    $theme--modal-btn-positive-text: #FFF;
+    $theme--modal-btn-ok: $theme--btn-primary-color;
+    $theme--modal-btn-ok-text: #FFF;
+    $theme--btn-reopen: $theme--btn-primary-color;
+    $theme--btn-reopen-text: #FFF;
+    $theme--toggle-enabled-color:$theme--btn-primary-color;
+    $theme--designation-color: #FFF;
+    }
+@else if $theme == $blush{
+    $theme--base-color:#3b1e28;
+    $theme--base-color2:#3b1e28;
+    $theme--inactive-color:#fdfeff5c;
+    $theme--hover-color:#FFF;
+    $theme--active-color:#FFF;
+    $theme--breadcrumb-color:#F8F8F8;
+    $theme--highlighted:$theme--base-color;
+    $theme--highlighted-text:#FFF;
+    $theme--header-text-color:#4a4a4a;
+    $theme--modal-btn-positive:#00A200;
+    $theme--modal-btn-negative:$randstad-red;
+    $theme--table-input-color:#482735;
+    $theme--btn-primary-color:#903c5c;
+    $theme--btn-attach:#0d5f44;
+    $theme--sender-bubble-color:#ffc6de;
+    $theme--receiver-bubble-color:#ffffff;
+    $theme--comments-container:transparent;
+    $theme--container-border: #1d223a12;
+    $theme--container-bg:#fbfbff;
+    $theme--chart-stroke-color: $theme--base-color;
+    $theme--btn-submit-text: #FFF;
+    $theme--kpi-list-header-color: #FFF;
+    $theme--modal-btn-positive-text: #FFF;
+    $theme--modal-btn-ok: $theme--btn-primary-color;
+    $theme--modal-btn-ok-text: #FFF;
+    $theme--btn-reopen: $theme--btn-primary-color;
+    $theme--btn-reopen-text: #FFF;
+    $theme--toggle-enabled-color:$theme--btn-primary-color;
+    $theme--designation-color: #FFF;
+    }
+    @else if $theme == $tealed{
+        $theme--base-color:#13312b;
+        $theme--base-color2:#13312b;
+        $theme--inactive-color:#fdfeff5c;
+        $theme--hover-color:#FFF;
+        $theme--active-color:#FFF;
+        $theme--breadcrumb-color:#F8F8F8;
+        $theme--highlighted:$theme--base-color;
+        $theme--highlighted-text:#FFF;
+        $theme--header-text-color:#4a4a4a;
+        $theme--modal-btn-positive:#00A200;
+        $theme--modal-btn-negative: #3e2723;
+        $theme--table-input-color:#274839;
+        $theme--btn-primary-color:#3c906d;
+        $theme--btn-attach:#0d5c5f;
+        $theme--sender-bubble-color:#fff9c1;
+        $theme--receiver-bubble-color:#ffffff;
+        $theme--comments-container:transparent;
+        $theme--container-border: #1d3a2f12;
+        $theme--container-bg:#fbfbff;
+        $theme--chart-stroke-color: $theme--base-color;
+        $theme--btn-submit-text: #FFF;
+        $theme--kpi-list-header-color: #FFF;
+        $theme--modal-btn-positive-text: #FFF;
+        $theme--modal-btn-ok: $theme--btn-primary-color;
+        $theme--modal-btn-ok-text: #FFF;
+        $theme--btn-reopen: $theme--btn-primary-color;
+        $theme--btn-reopen-text: #FFF;
+        $theme--toggle-enabled-color:$theme--btn-primary-color;
+        $theme--designation-color: #FFF;
+        }
